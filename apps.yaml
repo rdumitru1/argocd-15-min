@@ -12,7 +12,7 @@ spec:
     repoURL: https://github.com/rdumitru1/argocd-15-min.git
     targetRevision: HEAD
   destination:
-    namespace: production1
+    namespace: production
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
