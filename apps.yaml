@@ -1,3 +1,4 @@
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: devops-toolkit
@@ -8,7 +9,7 @@ spec:
   project: default
   source:
     path: helm
-    repoURL: https://github.com/vfarcic/argocd-15-min.git
+    repoURL: https://github.com/rdumitru1/argocd-15-min.git
     targetRevision: HEAD
   destination:
     namespace: production
