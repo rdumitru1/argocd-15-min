@@ -8,9 +8,11 @@ metadata:
 spec:
   project: default
   source:
-    path: helm
     repoURL: https://github.com/rdumitru1/argocd-15-min.git
     targetRevision: HEAD
+    path: helm
+    helm:
+      releaseName: devops-toolkit
   destination:
     namespace: production
     server: https://kubernetes.default.svc
