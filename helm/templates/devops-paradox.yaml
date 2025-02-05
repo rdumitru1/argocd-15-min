@@ -16,7 +16,7 @@ spec:
         image:
           tag: latest
         ingress:
-          host: devops-paradox.$INGRESS_HOST.xip.io
+          host: devops-paradox.local.xip.io
       version: v3
   destination:
     namespace: production
